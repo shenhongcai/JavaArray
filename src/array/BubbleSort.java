@@ -1,6 +1,6 @@
 
 
-//Ã°ÅİËã·¨£¨ÕıĞò¡ª´ÓĞ¡µ½´ó£©
+//å†’æ³¡ç®—æ³•
 
 
 package array;
@@ -8,29 +8,29 @@ package array;
 public class BubbleSort {
 
 	public static void main(String[] args) {
-		// ´´½¨Ò»¸öÊı×é£¬Õâ¸öÊı×éÊÇÂÒĞòÅÅÁĞµÄ
+		// åˆ›å»ºä¸€ä¸ªæ•°ç»„ï¼Œè¿™ä¸ªæ•°ç»„æ˜¯ä¹±åºæ’åˆ—çš„
 		int[]array= {56,14,8,67,2,34};
 		
-		//´´½¨Ã°ÅİÅÅĞòÀàµÄ¶ÔÏó
+		//åˆ›å»ºå†’æ³¡æ’åºç±»çš„å¯¹è±¡
 		
 		BubbleSort sorter=new BubbleSort();
 		
-		//µ÷ÓÃÅÅĞò·½·¨½«Êı×éÅÅĞò
+		//è°ƒç”¨æ’åºæ–¹æ³•å°†æ•°ç»„æ’åº
 		
-		sorter.sort1(array);  //ĞèÁíÍâ´´½¨sort1·½·¨
+		sorter.sort1(array);  //éœ€å¦å¤–åˆ›å»ºsort1æ–¹æ³•
 		sorter.sort2(array);
 
 	}
-//´´½¨Ã°ÅİÅÅĞò·½·¨1£¨ÕıĞò-´ÓĞ¡µ½´ó£©
+//åˆ›å»ºå†’æ³¡æ’åºæ–¹æ³•1ï¼ˆæ­£åº-ä»å°åˆ°å¤§ï¼‰
 	public void sort1(int[] array) {
 		
 	for(int i=1;i<array.length;i++) {
-	//±È½ÏÏàÁÚÁ½¸öÔªËØ£¬½Ï´óµÄÊıÍùºóÃ°Åİ
+	//æ¯”è¾ƒç›¸é‚»ä¸¤ä¸ªå…ƒç´ ï¼Œè¾ƒå¤§çš„æ•°å¾€åå†’æ³¡
 	for(int j=0;j<array.length-i;j++) {
 		if(array[j]>array[j+1]) {
-			int temp=array[j];//°ÑµÚÒ»¸öÔªËØ±£´æµ½ÁÙÊ±±äÁ¿ÖĞÈ¥
-			array[j]=array[j+1];//°ÑµÚ¶ş¸öÔªËØ±£´æµ½µÚÒ»¸öÔªËØµ¥ÔªÖĞÈ¥
-			array[j+1]=temp;	//°ÑÁÙÊ±±äÁ¿£¨Ò²¾ÍÊÇµÚÒ»¸öÔªËØÔ­Öµ£©±£´æµ½µÚ¶ş¸öÔªËØÖĞÈ¥
+			int temp=array[j];//æŠŠç¬¬ä¸€ä¸ªå…ƒç´ ä¿å­˜åˆ°ä¸´æ—¶å˜é‡ä¸­å»
+			array[j]=array[j+1];//æŠŠç¬¬äºŒä¸ªå…ƒç´ ä¿å­˜åˆ°ç¬¬ä¸€ä¸ªå…ƒç´ å•å…ƒä¸­å»
+			array[j+1]=temp;	//æŠŠä¸´æ—¶å˜é‡ï¼ˆä¹Ÿå°±æ˜¯ç¬¬ä¸€ä¸ªå…ƒç´ åŸå€¼ï¼‰ä¿å­˜åˆ°ç¬¬äºŒä¸ªå…ƒç´ ä¸­å»
 					
 				}
 				
@@ -38,11 +38,11 @@ public class BubbleSort {
 				
 		}
 	
-	System.out.print("ÉıĞòÅÅÁĞ:");
-	showArray(array);		//
+	System.out.print("å‡åºæ’åˆ—:");
+	showArray(array);		
 	}
 
-	//´´½¨Ã°ÅİÅÅĞò·½·¨2£¨µ¹Ğò¡ª´Ó´óµ½Ğ¡£©
+//åˆ›å»ºå†’æ³¡æ’åºæ–¹æ³•2ï¼ˆå€’åºâ€”ä»å¤§åˆ°å°ï¼‰
 	public void sort2(int[]array) {
 		for(int i=1;i<array.length;i++) {
 			for(int j=0;j<array.length-i;j++){
@@ -54,13 +54,13 @@ public class BubbleSort {
 							}
 						}	
 					}	
-	System.out.print("½µĞòÅÅÁĞ:");	
+	System.out.print("é™åºæ’åˆ—:");	
 	showArray(array);	
 		
 				}
 	
 	
-//ÏÔÊ¾Êı×éÖĞµÄÃ¿¸öÔªËØ	
+//æ˜¾ç¤ºæ•°ç»„ä¸­çš„æ¯ä¸ªå…ƒç´ 	
 	public void showArray(int[]array) {
 		for(int i:array) {
 			
