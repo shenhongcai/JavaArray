@@ -1,0 +1,21 @@
+
+
+
+
+		1.日期格式化
+		示例1:
+		Date date=new Date()  //创建Date对象date
+		String year=String.format("%tY",date);//将date格式化为年
+		
+		2.时间格式化
+		示例2:
+		Date date=new Date()  //创建Date对象date
+		String year=String.format("%tH",date); //将date格式化为时
+		
+		3.使用SimpleDateFormat类将系统时间转换成自定义格式
+		示例3:
+		Date newdate=new Date();
+		SimpleDateFormat date=
+				new SimpleDateFormat("yyyy.MM.dd ");
+				
+				System.out.println("日期:"+date.format(newdate));
